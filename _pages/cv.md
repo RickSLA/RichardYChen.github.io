@@ -4,7 +4,7 @@ permalink: /cv/
 title: CV
 description: updated in 2019/11
 ---
-The full CV is [HERE](/assets/pdf/RichardCHEN_CV.pdf).
+The full CV is [HERE](/assets/pdf/RichardCHEN_CV.pdf){:target="_blank"}.
 
 ### Education
 **The University of Chicago**, 2015 - 2020 (expected)\\
@@ -70,6 +70,7 @@ Gold medal, Shiing Shen Chern Mathematics Contest, 2010
 
 
 ### Professional Services
+Referee for *Journal of the American Statistical Association*, 2019
 Referee for *Journal of Econometrics*, 2017, 2018, 2019
 
 Computational research aide, Argonne National Laboratory, MCS, 2017

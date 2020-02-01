@@ -74,7 +74,7 @@ Thumbnail sizing is not necessary, as the grid crops images perfectly.
 
 #### Theming
 Some beautiful theme colors have been selected to choose from.
-The default is blue-1, but quickly change it by editing `$theme-color` variable in the `_sass/_variables.scss` file (line 72).
+The default is `blue-1`, but quickly change it by editing `$theme-color` variable in the `_sass/_variables.scss` file (line 72).
 Other color variables are listed there, as well.
 
 #### Code Highlighting
