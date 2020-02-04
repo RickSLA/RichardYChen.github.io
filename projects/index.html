@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Richard Y. CHEN | Projects</title>
+  <meta name="description" content="A simple, whitespace theme for academics.
+">
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/projects/">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+    <span class="site-title">
+        
+        <strong>Richard Y. CHEN</strong>
+    </span>
+    
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger">
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewbox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+            </svg>
+          </span>
+        </label>
+
+      <div class="trigger">
+        <!-- Bio -->
+        <a class="page-link" href="/" style="color:rgb(0,0,102); font-weight:bold; font-size:19px">Bio</a>
+        
+        <!-- CV link
+        <a class="page-link" href="/assets/pdf/RichardCHEN_CV.pdf">vitae</a> -->
+
+        <!-- Automatic pages
+        
+          
+        
+          
+            <a class="page-link" href="/cv/">CV</a>
+          
+        
+          
+        
+          
+        
+          
+            <a class="page-link" href="/papers/">Papers</a>
+          
+        
+          
+            <a class="page-link" href="/projects/">Projects</a>
+          
+        
+          
+         -->
+
+        <!-- CV -->
+        <a class="page-link" href="/cv/" style="color:rgb(0,128,255); font-weight:bold; font-size:19px">CV</a>
+
+        <!-- Papers -->
+        <a class="page-link" href="/papers/" style="color:rgb(0,153,76); font-weight:bold; font-size:19px">Papers</a>
+
+        <!-- Projects -->
+        <a class="page-link" href="/projects/" style="color:rgb(204,0,0); font-weight:bold; font-size:19px">Projects</a>
+
+        <!-- Blog -->
+        <!-- <a class="page-link" href="/blog/">blog</a> -->
+
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Projects</h1>
+    <h5 class="post-description">This post presents my recent work on a big-data problem. The purposes are to corroborate my research and describe a collection of codes that aim to promote scalable computation, automation and reproducibility.</h5>
+  </header>
+
+  <article class="post-content Projects clearfix">
+    <p>Understanding and monitoring financial system hinge on reliable and timely measurements of market-wide systemic risk. They are indispensably critical for the central bank and policymakers to maintain a healthy and stable economy.</p>
+
+<p><a href="https://wrds-www.wharton.upenn.edu/pages/support/data-overview/wrds-overview-taq/" target="_blank">TAQ</a> provides data recorded at the millisecond level and is rapidly growing by approximately 1000 gigabytes per month. The overwhelming amount of high-frequency data unveils a golden opportunity yet poses significant challenges in measuring risk on a large scale.</p>
+
+<div class="img">
+    <a href="/assets/img/data_cum_rets_intraday.jpg" target="_blank">
+    <img class="col three left" src="/assets/img/data_cum_rets_intraday.jpg" alt="" title="intraday data (click to zoom in)">
+    </a>
+</div>
+<div class="col three caption left">
+    Intraday transaction data of SP100 constituents on 2019/12/20
+</div>
+
+<p>This big-data problem has become an overarching theme in my Ph.D. dissertation. My previous research battled with some conceptual, methodological and theoretical challenges in the study of <a href="https://doi.org/10.1016/j.jeconom.2017.05.015" target="_blank">microstructure</a> and <a href="https://arxiv.org/abs/1810.04725" target="_blank">volatility</a>.</p>
+
+<p>Recently, I spent some time applying my theoretical results to one particular statistical task – PCA (principal component analysis) – by implementing a few software packages to march across <strong>7632.91 GBs</strong> of transaction data spanning more than <strong>16 years</strong>. This is the focus of this post.</p>
+
+<div class="img">
+    <a href="/assets/img/size_transaction.jpg" target="_blank">
+    <img class="col two right" src="/assets/img/size_transaction.jpg" alt="" title="data size (click to zoom in)">
+    </a>
+</div>
+<div class="col two caption right">
+    Cumulative data size of TAQ transaction data since 2003/09/10
+</div>
+
+<h3 id="why">Why</h3>
+<p>This foray into database query and big-data computation is stimulated by (1) my data science ideal, (2) plight of some of my fellow graduate students:</p>
+
+<ul>
+  <li>
+    <p>A scientific theory, as Karl Popper emphasized, should in principle be disprovable/falsifiable by experiment or observation. In the same vein, data science needs to be reproducible to be scientific. To promote reproducibility, I hope that my empirical research could be based on open data and open softwares. To this end, I decided to choose a datebase that is open to academia, and write an assortment of codes that automize all the data query and computation tasks without human intervention, so that my peers and colleagues will be able to reproduce my results pretty conveniently (no more than 48 hours using the <a href="https://wrds-www.wharton.upenn.edu/pages/support/getting-started/3-ways-use-wrds/#the-wrds-cloud" target="_blank">WRDS Cloud</a> cluster).</p>
+  </li>
+  <li>
+    <p>Another reason is to some extent personal. It took my friend 3 months to download, clean, organize some large datasets from TAQ before being able to proceed with the statistical analysis. It is a heartbreaking story of a back-breaking job. Not only consuming time, it costs money too! Another friend working with <em>Datastream</em> had to purchase an expensive desktop last September with sufficient RAM to read in data from the local hard drive.</p>
+  </li>
+</ul>
+
+<p>In the light of these, what can I contribute? It would be wonderful if we have a data pipeline that</p>
+<ol>
+  <li>inquires data by a few scripts;</li>
+  <li>cleans data on the server;</li>
+  <li>computes statistics on the fly;</li>
+  <li>saves final results ready to download;</li>
+  <li>
+<del>allows you to lie on a sunny beach musing over what’s your next paper while it is running data for you, instead of</del> toiling, sweating, bleeding through your current project.</li>
+</ol>
+
+<p>If these are attainable, not only can results be easily reproduced, but also downloading and hand-cleaning become unnecessary.</p>
+
+<p>Kill two birds with one stone! Can we?</p>
+
+<p><em>Yes we can.</em> (not a political slogan <img class="emoji" title=":sweat:" alt=":sweat:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f613.png" height="20" width="20">)</p>
+
+<p>For example, below is a plot (click to zoom in) produced by my automatic data pipeline after it scanned through 7632.91 GBs of data on WRDS server.</p>
+
+<div class="img">
+    <a href="/assets/img/pca_eigenvalue_week_bc.jpg" target="_blank">
+    <img class="col three" src="/assets/img/pca_eigenvalue_week_bc.jpg" alt="" title="eigenvalues (click to zoom in)">
+    </a>
+</div>
+<div class="col three caption">
+    Proportions of cross-sectional variations explained by principal components, 2003/09/10-2019/12/31
+</div>
+
+<p>Based on Corollary 1 of <a href="/assets/pdf/Chen18_preaveraging_func_vol.pdf" target="_blank">my paper</a>, we can quantify the statistical uncertainty and compute confidence intervals.</p>
+
+<div class="img">
+    <a href="/assets/img/pca_eigenvalue_week_ci.jpg" target="_blank">
+    <img class="col three" src="/assets/img/pca_eigenvalue_week_ci.jpg" alt="" title="uncertainty quantification (click to zoom in)">
+    </a>
+</div>
+<div class="col three caption">
+    Uncertainty quantification and statisitcal inference based on <a href="https://arxiv.org/abs/1810.04725" target="_blank">my research</a>, 2003/09/10-2019/12/31
+</div>
+
+<h3 id="how-interrobang">How <img class="emoji" title=":interrobang:" alt=":interrobang:" src="https://github.githubassets.com/images/icons/emoji/unicode/2049.png" height="20" width="20">
+</h3>
+<p>There are several softwares that work to our computational advantage.</p>
+
+<p><a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a> is a open-source database management system adopted by WRDS. It greatly facilitates data query. It has been configured by WRDS and we do not need to work out its backend ourselves.</p>
+
+<p><a href="https://pypi.org/project/wrds/" target="_blank">wrds</a> is a free module written by WRDS. It establishes connection to the PostgreSQL server and seamlessly accesses data in the format of pandas <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html" target="_blank">DataFrame</a>. To submit customized query requests, only elementary SQL syntax is needed.</p>
+
+<p><a href="https://pandas.pydata.org/" target="_blank">pandas</a> is a fantastic (and free) data science library built on top of <a href="https://numpy.org/" target="_blank">numpy</a>. pandas offers expressive data structures and make it pretty easy to work with tabular and time series data.</p>
+
+<p>However, the WRDS engineering team still faces a substantial task of maintaining the humongous and expanding database. <a href="https://www.sqlalchemy.org/" target="_blank">SQLAlchemy</a> sometimes raises an operational error <code class="highlighter-rouge">canceling statement due to conflict with recovery</code> when data query (the most time-cosuming part of this pipeline with SQL machinery behind the scene) runs for more than 6 hours. Besides, the database server occasionally experiences a communication glitch with the LDAP server (for authentication), which prohibits the connection to be reestablished.</p>
+
+<p>Due to these constraints, the current pipeline is only partially automatic and needs human care every few hours. Rather than looping over all the data at once, we currently need to submit batch jobs to scan subsets of data which can finish in less than, for example, 6 hours. If you decide to leave for the beach, please bring a ssh-capable device with you.</p>
+
+<p>More to come, data and pipeline. Mark my words~</p>
+
+<p><br><br></p>
+
+  </article>
+
+  
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer>
+
+  <div align="center" class="wrapper">
+      © 2020 by <a href="/">Richard Y. CHEN</a>,
+    powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll.</a> <!--hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.-->
+
+    
+  </div>
+
+</footer>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
+<script src="/assets/js/katex.js"></script>
+
+
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-XXXXXXXXX', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>
