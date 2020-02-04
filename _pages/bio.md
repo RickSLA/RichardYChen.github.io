@@ -14,8 +14,7 @@ social: true
 
 Hi! I am a graduate student in [statistics at the University of Chicago](https://stat.uchicago.edu){:target="_blank"}. My thesis advisor is Professor [Per A. Mykland](https://www.stat.uchicago.edu/~mykland/){:target="_blank"}. My research has mainly been funded by the fellowship from the Department of Statistics at the University of Chicago, the National Science Foundation grants DMS 14-07812 and DMS 17-13129, and the Stevanovich Fellowship 2019.
 
-
-My current research centers on statistical methods and theory for large-scale high-frequency data. Main topics are nonparametric frameworks to extract dynamic cross sections and dependence structures from massive datasets, utilize low-latency noisy measurements and handle missing observations, enhance accuracy and statistical efficiency by leveraging the power of signal processing, statistics and stochastic calculus.
+My current research centers on statistical methods and theory for [*large-scale high-frequency data*](/projects/){:target="_blank"}. Main topics are nonparametric frameworks to extract dynamic cross sections and dependence structures from massive datasets, utilize low-latency noisy measurements and handle missing observations, enhance accuracy and statistical efficiency by leveraging the power of signal processing, statistics and stochastic calculus.
 
 My previous contributions include stationarity tests of microstructure noise, nonparametric inference of functionals of covariance matrices using time-domain (pre-averaging) and frequency-domain (Fourier-Malliavin)  techniques. My research has won the Stevanovich Fellowship and has been presented in summer school, department seminar, workshop and international conferences. There is another [reseach bio](https://stevanovichcenter.uchicago.edu/stevanovich-fellowship-awardees/richard-chen/){:target="_blank"} from Stevanovich Center at the University of Chicago. Enchanté!
 

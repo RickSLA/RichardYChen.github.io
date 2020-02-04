@@ -23,17 +23,26 @@
 
       <div class="trigger">
         <!-- Bio -->
-        <a class="page-link" href="{{ site.baseurl | prepend: site.url }}/">Bio</a>
+        <a class="page-link" href="{{ site.baseurl | prepend: site.url }}/" style="color:rgb(0,0,102); font-weight:bold; font-size:19px">Bio</a>
         
-        <!-- CV link -->
-        <!-- <a class="page-link" href="{{ '/assets/pdf/RichardCHEN_CV.pdf' | prepend: site.baseurl | prepend: site.url }}">vitae</a> -->
+        <!-- CV link
+        <a class="page-link" href="{{ '/assets/pdf/RichardCHEN_CV.pdf' | prepend: site.baseurl | prepend: site.url }}">vitae</a> -->
 
-        <!-- Pages -->
+        <!-- Automatic pages
         {% for page in site.pages %}
           {% if page.title and page.url != "/" %}
             <a class="page-link" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a>
           {% endif %}
-        {% endfor %}
+        {% endfor %} -->
+
+        <!-- CV -->
+        <a class="page-link" href="{{ '/cv/' | prepend: site.baseurl | prepend: site.url }}" style="color:rgb(0,128,255); font-weight:bold; font-size:19px">CV</a>
+
+        <!-- Papers -->
+        <a class="page-link" href="{{ '/papers/' | prepend: site.baseurl | prepend: site.url }}" style="color:rgb(0,153,76); font-weight:bold; font-size:19px">Papers</a>
+
+        <!-- Projects -->
+        <a class="page-link" href="{{ '/projects/' | prepend: site.baseurl | prepend: site.url }}" style="color:rgb(204,0,0); font-weight:bold; font-size:19px">Projects</a>
 
         <!-- Blog -->
         <!-- <a class="page-link" href="{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}">blog</a> -->

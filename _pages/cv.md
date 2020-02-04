@@ -2,7 +2,7 @@
 layout: page
 permalink: /cv/
 title: CV
-description: updated in 2019/11
+description: updated in 2020/01
 ---
 The full CV is [HERE](/assets/pdf/RichardCHEN_CV.pdf){:target="_blank"}.
 
@@ -33,9 +33,9 @@ Reassessment of long-range dependence of volatility by the estimation of volatil
 Richard Y. Chen. 2019. work in progress
 
 
-
 ### Teaching
 **Teaching assistant for college classes**\\
+Introduction to probability models (advanced course, 2020 winter)\\
 Applied linear regression (introductory course, 2016 spring, 2017 spring)\\
 Statistical theory and methods (advanced course, 2015 autumn)
 
@@ -51,7 +51,7 @@ Volunteer tutor for statistics in the UChicago College Core Tutor Program, 2015
 
 
 ### Presentations
-2019/12, Stevanovich Center Seminar, the University of Chicago (forthcoming)\\
+2019/12, Stevanovich Center Seminar, the University of Chicago\\
 2019/07, Joint Statistical Meeting, Denver\\
 2019/06, SoFiE annual conference, Fudan University\\
 2017/08, Argonne National Laboratory summer student workshop\\
